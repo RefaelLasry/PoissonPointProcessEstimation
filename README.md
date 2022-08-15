@@ -7,9 +7,10 @@ One example where MLE is not simple and our demo will focus on is the Poisson po
 ## Part 1: estimation of Poisson with Maximum Likelihood Estimation
 The MLE estimator for the Poisson distribution is quite simple - the mean.
 
-In part 1, we demonstrate generating random variables followed by the estimation. As
+In part 1, we demonstrate generating random variables followed by the estimation. As we can see that the estimated 
+parameter is close to the same parameter that generates the observations. 
 
-We can see that the estimated parameter is close to the same parameter that generates the observations. 
+part 1 is at poissonmle.py
 
 ## Part 2: estimation of Poisson with Maximum Likelihood Estimation
 A powerful tool that one can use to obtain the MLE is autograd. Instead of asking what values get the maximum likelihood
@@ -28,10 +29,14 @@ The methods get the same results (reasonably close) as the given parameters. Thi
 tool to estimate parameters. It might be helpful for cases where algebra can't 
 do the job.
 
-## Part 3: estimation of Poisson point process with autograd
-Here we choose a Poisson point process. The Poisson parameter is derived from the following equation (time*c + d). Where
-c represents a decay/acceleration over time, and d represents "long time average" intensity. 
+part 2 is at poissonautomaticgrad.py
 
-Our example builds with two steps, generating samples according to the equation and estimating the process with autograd. The
-given parameters, and the estimated parameters are reasonably close. 
+## Part 3: estimation of Poisson point process with autograd
+For the Poisson point process we choose a parameter that derived from the following equation (time*c + d). Where c 
+represents a decay/acceleration over time, and d represents "long time average" intensity. 
+
+Our example builds with two steps, generating samples according to the equation and estimating the process with autograd.
+The given parameters, and the estimated parameters are reasonably close. 
 Q.E.D.
+
+part 3 is at poissonpointprocess.py
